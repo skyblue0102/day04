@@ -1,14 +1,14 @@
 
 import random
-secret = int(random.randint(1, 10))
-guess = int(random.randint(1, 10))
-
-#secret = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-#guess = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-
-if guess < secret:
-    print('too low')
-elif guess == secret:
-    print('just right')
+small = bool(random.randint(0,1))
+green = bool(random.randint(0,1))
+if small:
+    if green:
+        print('pea')
+    else:
+        print('cherry')
 else:
-    print('too high')
+    if green:
+        print('watermelon')
+    else:
+        print('pumpkin')
